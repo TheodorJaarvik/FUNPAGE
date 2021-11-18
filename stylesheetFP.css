@@ -1,0 +1,169 @@
+@font-face{
+    font-family:FreeLine;
+    src:url(fonts/FreeLine.ttf);
+}
+@font-face{
+    font-family:PrStart;
+    src:url(fonts/PrStart.ttf);
+}
+
+body{
+    background-image: url(images/computer.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: PrStart;
+    background-color: black;
+}
+ul{
+    display: flex;
+    margin: 20px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    width: 35%;
+}
+#ul1{
+position: absolute;
+top: 10px;
+}
+#ul2{
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+li{
+    display: flex;
+    list-style: none;
+    padding: 15px 10px 10px 10px;
+    margin-right: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: cornflowerblue;
+    font-size: 11px;
+    transition: background-color 500ms ease-out 100ms;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: background-color 2s ease-out 100ms;
+}
+li:hover{
+    background-color: darkblue;
+}
+a:hover{
+   color: red;
+}
+aside{
+    position: absolute;
+    right: 50px;
+    top: 30%;
+    color: lawngreen;
+    font-family: PrStart;
+}
+#aside_Left{
+    position: absolute;
+    left: 80px;
+    top:80%;
+}
+#error{
+    width: 310px;
+    height: 180px;
+}
+#points{
+    position: absolute;
+    color: white;
+    left: 49%;
+    top: 20%;
+    font-family: PrStart;
+    font-size: 40px;
+    z-index: 1000000;
+}
+#points2{
+    position: absolute;
+    color: white;
+    left: 42%;
+    top: 40%;
+    font-family: PrStart;
+    font-size: 20px;
+    z-index: 100000;
+}
+#game{
+    position: absolute;
+    left:36.5%;
+    top: 17.3%;
+    width: 400px;
+    height: 290px;
+    background-color: blue;
+    overflow: hidden;
+    z-index: 0;
+}
+#character{
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    top: 240px;
+}
+
+.animate{
+    animation: jump 500ms;
+}
+
+#block{
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    left: 380px;
+    top: 220px;
+    animation: block 800ms infinite;
+}
+@keyframes block{
+    0%{left: 380px;}
+    100%{left: -40px;}
+}
+@keyframes jump{
+    0%{top: 240px;}
+    30%{top:190px;}
+    70%{top:190px;}
+    100%{top: 240px;}
+}
+
+@media only screen and (max-width:376px){
+    body{
+        background-image: none;
+    }
+    #error{
+        visibility: hidden;
+    }
+    #game{
+    left: 0%;
+    top: 20.3%;
+    }
+    #gameInfo{
+        width: 0px;
+        height: 0px;
+    }
+    #points{
+    left: 15%;
+    top: 20%;
+    font-size: 30px;
+}
+    #points2{
+    left: 30%;
+    top: 40%;
+    font-size: 15px;
+}
+    #error2{
+        width: 375px;
+    }
+    #aside_Left{
+    left: 15px;
+    top:80%;
+}
+    li{
+    font-size: 8px;
+}
+}
