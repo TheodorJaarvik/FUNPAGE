@@ -23,7 +23,7 @@ var checkdead = setInterval(function(){
         block.style.display= "none";
         character.style.animatiion="none";
         character.style.display="none";
-        document.getElementById("error2").setAttribute("src","images/error2.png");
+        document.getElementById("error2").setAttribute("src","Images/error2.png");
         document.getElementById("points").style.left="38%";
         document.getElementById("points").style.color="red";
         document.getElementById("points").innerHTML="GAME OVER";
