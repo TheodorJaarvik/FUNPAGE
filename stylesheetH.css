@@ -18,8 +18,9 @@ body{
     background-color:blue;
 }
 ul{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 20px 5px 5px 32.5%;
     padding: 5px 5px 5px 5px;
     width: 35%;
@@ -84,7 +85,7 @@ h1{
 main{
     text-align: center;
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:830px){
     #a1{
         visibility: hidden;
     }
@@ -93,5 +94,8 @@ main{
     }
     body{
         background-image: url(Images/boyboyjames.png);
+    }
+    h1{
+        font-size: 100px;
     }
 }
