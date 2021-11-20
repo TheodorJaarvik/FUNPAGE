@@ -77,3 +77,14 @@ h1{
     overflow: hidden;
     max-height: 1030px;
 }
+@media only screen and (max-width:500px){
+    #a1{
+        visibility: hidden;
+    }
+    #a2{
+        visibility: hidden;
+    }
+    body{
+        background-image: url(Images/boyboyjames.png);
+    }
+}
