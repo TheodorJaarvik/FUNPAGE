@@ -85,7 +85,8 @@ h1{
 main{
     text-align: center;
 }
-@media only screen and (max-width:830px){
+@media only screen and (device-width: 414px) and (device-height: 896px)and (-webkit-device-pixel-ratio: 3)
+    {
     #a1{
         visibility: hidden;
     }
