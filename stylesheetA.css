@@ -18,10 +18,11 @@ body{
     background-color:black;
 }
 ul{
-    display: flex;
+    display: inline-flex;
+    justify-content: center;
     margin: 20px 5px 5px 36%;
     padding: 5px 5px 5px 5px;
-    width: 33%;
+    width: 35%;
 }
 li{
     display: flex;
