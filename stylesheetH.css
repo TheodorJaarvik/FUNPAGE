@@ -1,0 +1,79 @@
+@font-face{
+    font-family:FreeLine;
+    src:url(fonts/FreeLine.ttf);
+}
+@font-face{
+    font-family:PrStart;
+    src:url(fonts/PrStart.ttf);
+}
+@font-face{
+    font-family:Grafitti;
+    src:url(fonts/MARSNEVENEKSK-Regular.otf);
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: PrStart;
+    background-color:blue;
+}
+ul{
+    display: flex;
+    margin: 20px 5px 5px 500px;
+    padding: 5px 5px 5px 5px;
+    width: 35%;
+}
+li{
+    display: flex;
+    list-style: none;
+    padding: 15px 10px 10px 10px;
+    margin-right: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: cornflowerblue;
+    font-size: 11px;
+    transition: background-color 500ms ease-out 100ms;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: background-color 2s ease-out 100ms;
+}
+li:hover{
+    background-color: darkblue;
+}
+a:hover{
+   color: red;
+}
+aside{
+    position: absolute;
+    right: 50px;
+    top: 30%;
+    color: lawngreen;
+    font-family: PrStart;
+}
+h1{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-family: Grafitti;
+    font-size: 150px;
+    z-index: 100000;
+    background-color: blue;
+    padding: 15px 15px 15px 15px;
+    border: 1px solid darkblue;
+    border-radius: 20px;
+}
+#a1{
+    position: absolute;
+    left: 0px;
+    width: 50%;
+}
+#a2{
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    overflow: hidden;
+    max-height: 1030px;
+}
